@@ -1,0 +1,44 @@
+AKVELON EDU: REST API automation testing (Python)
+* i had a presentation related with these theme on notes (internship task)
+
+Testing learning: Selenium, Linux(backend, web server), DB testing, Jenkins, Docker
+
+API - application programming interface - the way(point) for connecting frontend(client) with backend (server).
+it's a description, there is one computer program can interract with another computer program.
+Web API consist of one or more publicly accesible endpoints for a system for exchanging specific request-response messages, which a usually described using JSON or XML and transmitted using HTTP.
+
+REST - Representational State Transfer. This is architectural style of building the API endpoints of the application.
+
+The REST services must meet the following requirements. It should be a:
+- Client-server model
+- Stateless
+- Casheable
+- Uniform interface (every resource is identificated by URL)
+- Layered system
+- Code on demand
+
+APIs are open access endpoints, it's important to test it correctly.
+
+
+PRACTISE: Pytest & requests frameworks
+
+Terms:
+1. Pytest - framework for configuring autotests
+2. Requests - library for sending HTTP requests
+3. pip - console utilite for managing packets
+4. requirements.txt - contains list of packets for setup
+
+Tutorial:
+Pytest - framework - couple of classes
+	Parallel mode
+	Suite - set of test xases
+	Precondition - Post condition
+	Skip, fail
+*pytest doing all of this for you
+
+Selenium test
+	Parallel mode
+	Suite of test
+	Simple group of test
+	Condition
+	Report
