@@ -1,0 +1,12 @@
+Content:
+1. Preparing for making autotests
+2. Writing fixtures and small client for API test
+3. Writing tests
+4. Adding Allure
+5. Environment for tests
+6. Configure repositories
+7. Setting and configure Gitlab runner
+8. Configure pipeline in .gitlab-ci.yml
+9. Run tests and see reports
+10. Configure pipeline for UI tests
+11. Useful links
