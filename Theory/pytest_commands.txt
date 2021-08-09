@@ -1,0 +1,47 @@
+This is commands for PyTest from official docs:
+https://docs.pytest.org/en/6.2.x/contents.html
+https://qxf2.com/blog/pytest-command-line-options/ - also useful commands in practise
+
+pytest <filename> - run tests in this file
+pytest -v - extended output
+pytest -x stops execution after the first failure
+pytest -maxfail=n - execution stops after nth failure
+pytest -rA - gives output of all tests (f-Failed
+                                        E-error
+                                        s-skipped
+                                        x-xfailed
+                                        p-passed
+                                        P-passed with output
+                                        A-all)
+pytest -k <substring> -v - for executing tests, that contain substring
+
+TEST GROUPS (MARKERS)
+Markers: - for executing markers we need to import markers model to the file
+@pytest.mark.<markername>
+pytest -m <markername> -v - name of test markers, that should be executed
+FOR EXAMPLE this command: pytest -m others -v will execute only tests that markers as others
+
+PYTEST fixture (they can add some useful info before test will executed, f.e. DB, URL)
+@pytest.fixture
+pytest -k divisible -v - executing test with fixtures (k-means substring)
+
+CONFTEST - for making visiable fixture volumes. (file conftest.py - contain constants using fixtures)
+
+PARAMETRIZE (making for executing tests with several input suites)
+@pytest.mark.parametrize
+
+XFAIL // miss the failure
+Skip and Xfail in Pytest:
+@pytest.mark.xfail -
+@pytest.mark.skip -
+
+maxfail - execution stops after nth failure
+pytest --maxfail = <num>
+Example: pytest test_failure.py -v --maxfail=2
+
+PARALLEL tests
+pip install pytest-xdist
+pytest -n <num> - syntax for parallel executing (e.g. pytest -n 3)
+
+TEST RESULTS IN XML:
+pytest test_multiplication.py -v --junitxml="result.xml" - e.g.
