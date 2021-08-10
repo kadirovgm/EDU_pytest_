@@ -16,7 +16,7 @@ def test_greater_equal():
    assert num >= 100
 
 
-@pytest.mark.skip # for skipping test
+@pytest.mark.skip # for skipping test_dog_api
 @pytest.mark.others
 def test_less():
    num = 100

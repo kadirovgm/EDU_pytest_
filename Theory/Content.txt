@@ -1,3 +1,4 @@
+Thanks for https://habr.com/ru/post/513432/
 Content:
 1. Preparing for making autotests
 2. Writing fixtures and small client for API test
