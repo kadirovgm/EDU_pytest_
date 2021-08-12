@@ -12,5 +12,6 @@ pip freeze > requirements.txt for migrate packages to requirements.txt
 
 gitlab-runner will be used for building project (https://docs.gitlab.com/runner/)
 
-
+.gitlab-ci.yml — файл, где на языке разметки yaml описаны инструкции что нужно делать gitlab runner
+gitlab-runner — это проект, написанный на языке Go. Он будет выполнять инструкции.
 
